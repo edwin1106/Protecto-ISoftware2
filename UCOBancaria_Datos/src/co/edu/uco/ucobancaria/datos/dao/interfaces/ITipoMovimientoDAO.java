@@ -2,12 +2,12 @@ package co.edu.uco.ucobancaria.datos.dao.interfaces;
 
 import java.util.List;
 
-import co.edu.uco.ucobancaria.dominio.TipoMovimientoDominio;
+import co.edu.uco.ucobancaria.dominio.TipoCuentaDominio;
 
 public interface ITipoMovimientoDAO {
-	void crear(TipoMovimientoDominio TipoMovimiento);
-	void actualizar(TipoMovimientoDominio TipoMovimiento);
-	void eliminar(TipoMovimientoDominio TipoMovimiento);
-	List<TipoMovimientoDominio> consultar(TipoMovimientoDominio TipoMovimiento);
+	void crear(TipoCuentaDominio TipoMovimiento);
+	void actualizar(TipoCuentaDominio TipoMovimiento);
+	void eliminar(TipoCuentaDominio TipoMovimiento);
+	List<TipoCuentaDominio> consultar(TipoCuentaDominio TipoMovimiento);
 
 }

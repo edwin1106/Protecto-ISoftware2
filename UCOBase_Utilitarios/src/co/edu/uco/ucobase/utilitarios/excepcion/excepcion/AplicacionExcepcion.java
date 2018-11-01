@@ -26,21 +26,26 @@ public final class AplicacionExcepcion extends RuntimeException {
 		setExcepcionRaiz(excepcionRaiz);
 		setLugarExcepcion(lugarExcepcion);
   	}
-  	public static AplicacionExcepcion CREAR(final String mensajeTecnico,final  String mensajeUsuario, final Exception excepcionRaiz, final ExcepcionEnum lugarExcepcion) {
-  		
-  		return new AplicacionExcepcion(mensajeTecnico, mensajeUsuario, excepcionRaiz,lugarExcepcion);
-  	}
   	
-  	public static AplicacionExcepcion CREAR(final String mensajeUsuario,final Exception excepcionRaiz, final ExcepcionEnum lugarExcepcion) {
-  		return new AplicacionExcepcion(mensajeUsuario, mensajeUsuario, excepcionRaiz, lugarExcepcion);
-  	}
-  	
-  	public static AplicacionExcepcion CREAR(final String mensajeUsuario,final ExcepcionEnum lugarExcepcion) {
-  		return new AplicacionExcepcion(mensajeUsuario, mensajeUsuario, null, lugarExcepcion);
-  	}
-  	public static AplicacionExcepcion CREAR(final String mensajeUsuario) {
-  		return new AplicacionExcepcion(mensajeUsuario, mensajeUsuario, null, null);
-  	}
+  	public static AplicacionExcepcion CREAR(final String mensajeTecnico, final String mensajeUsuario, final Exception excepcionRaiz, final ExcepcionEnum lugarExcepcion) {
+		return new AplicacionExcepcion(mensajeTecnico, mensajeUsuario, excepcionRaiz, lugarExcepcion);
+	}
+
+	public static AplicacionExcepcion CREAR(final String mensajeUsuario, final Exception excepcionRaiz, final ExcepcionEnum lugarExcepcion) {
+		return new AplicacionExcepcion(mensajeUsuario, mensajeUsuario, excepcionRaiz, lugarExcepcion);
+	}
+
+	public static AplicacionExcepcion CREAR(final String mensajeTecnico, final String mensajeUsuario, final ExcepcionEnum lugarExcepcion) {
+		return new AplicacionExcepcion(mensajeTecnico, mensajeUsuario, null, lugarExcepcion);
+	}
+
+	public static AplicacionExcepcion CREAR(final String mensajeUsuario, final ExcepcionEnum lugarExcepcion) {
+		return new AplicacionExcepcion(mensajeUsuario, mensajeUsuario, null, lugarExcepcion);
+	}
+
+	public static AplicacionExcepcion CREAR(final String mensajeUsuario) {
+		return new AplicacionExcepcion(mensajeUsuario, mensajeUsuario, null, null);
+	}
   	
   	
   	

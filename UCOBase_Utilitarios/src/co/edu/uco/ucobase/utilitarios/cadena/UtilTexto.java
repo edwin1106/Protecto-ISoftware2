@@ -18,5 +18,9 @@ public final class UtilTexto {
 		return obtenerUtilObjeto().obtenerValorDefecto(cadena, "").trim();
 		
 	}
+	
+	public final boolean cadenaEsVaciaONula(final String cadena) {
+		return aplicarTrim(cadena).intern() == "" ;
+	}
 
 }
