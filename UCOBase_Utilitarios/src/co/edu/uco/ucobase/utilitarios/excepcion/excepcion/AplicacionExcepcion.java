@@ -2,6 +2,7 @@ package co.edu.uco.ucobase.utilitarios.excepcion.excepcion;
 
 import co.edu.uco.ucobase.utilitarios.excepcion.enumeracion.ExcepcionEnum;
 
+
 import static co.edu.uco.ucobase.utilitarios.cadena.UtilTexto.obtenerUtilTexto;
 import static co.edu.uco.ucobase.utilitarios.objeto.UtilObjeto.obtenerUtilObjeto;
 

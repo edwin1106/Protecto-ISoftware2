@@ -1,4 +1,5 @@
 package co.edu.uco.ucobancaria.dominio;
+
 import static co.edu.uco.ucobase.utilitarios.cadena.UtilTexto.obtenerUtilTexto;
 import co.edu.uco.ucobase.utilitarios.cadena.enumeracion.ExpresionRegularEnum;
 import co.edu.uco.ucobase.utilitarios.dominio.enumeracion.OperacionEnum;

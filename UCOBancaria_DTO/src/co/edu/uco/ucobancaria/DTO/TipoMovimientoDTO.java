@@ -1,6 +1,7 @@
 package co.edu.uco.ucobancaria.DTO;
 
-import co.edu.uco.ucobase.utilitarios.objeto.UtilObjeto;
+import static co.edu.uco.ucobase.utilitarios.cadena.UtilTexto.obtenerUtilTexto;
+
 
 /**
  * Objeto de transferencia de datos que representa a un Tipo de Movimiento o de
@@ -19,7 +20,7 @@ public final class TipoMovimientoDTO {
 		super();
 	}
 
-	public TipoMovimientoDTO(int codigo, String nombre, String signo) {
+	public TipoMovimientoDTO(final int codigo,final String nombre,final String signo) {
 		super();
 		setCodigo(codigo);
 		setNombre(nombre);
@@ -30,7 +31,7 @@ public final class TipoMovimientoDTO {
 		return codigo;
 	}
 
-	public final void setCodigo(int codigo) {
+	public final void setCodigo(final int codigo) {
 		this.codigo = codigo;
 	}
 
@@ -38,16 +39,16 @@ public final class TipoMovimientoDTO {
 		return nombre;
 	}
 
-	public final void setNombre(String nombre) {
-		this.nombre = UtilObjeto.obtenerUtilObjeto().obtenerValorDefecto(nombre, "");
+	public final void setNombre(final String nombre) {
+		this.nombre = obtenerUtilTexto().aplicarTrim(nombre);
 	}
 
 	public final String getSigno() {
 		return signo;
 	}
 
-	public final void setSigno(String signo) {
-		this.signo = signo;
+	public final void setSigno(final String signo) {
+		this.signo = obtenerUtilTexto().aplicarTrim(signo);
 	}
 
 }

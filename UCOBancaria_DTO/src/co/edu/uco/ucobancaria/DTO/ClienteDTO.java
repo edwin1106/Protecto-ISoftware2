@@ -32,7 +32,7 @@ public final class ClienteDTO {
 		return codigo;
 	}
 
-	public final void setCodigo(int codigo) {
+	public final void setCodigo(final int codigo) {
 		this.codigo = codigo;
 	}
 
@@ -40,7 +40,7 @@ public final class ClienteDTO {
 		return numeroIdentificacion;
 	}
 
-	public final void setNumeroIdentificacion(String numeroIdentificacion) {
+	public final void setNumeroIdentificacion(final String numeroIdentificacion) {
 		this.numeroIdentificacion = obtenerUtilTexto().aplicarTrim(numeroIdentificacion);
 	}
 
@@ -48,24 +48,24 @@ public final class ClienteDTO {
 		return nombre;
 	}
 
-	public final void setNombre(String nombre) {
-		this.nombre = nombre;
+	public final void setNombre(final String nombre) {
+		this.nombre = obtenerUtilTexto().aplicarTrim(nombre);
 	}
 
 	public final String getCorreo() {
 		return correo;
 	}
 
-	public final void setCorreo(String correo) {
-		this.correo = correo;
+	public final void setCorreo(final String correo) {
+		this.correo = obtenerUtilTexto().aplicarTrim(correo);
 	}
 
 	public final String getClave() {
 		return clave;
 	}
 
-	public final void setClave(String clave) {
-		this.clave = clave;
+	public final void setClave(final String clave) {
+		this.clave = obtenerUtilTexto().aplicarTrim(clave);
 	}
 
 }
